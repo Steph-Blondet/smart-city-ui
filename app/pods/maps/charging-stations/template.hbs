@@ -4,9 +4,21 @@
     </div>
 
     <div class="col-sm-9">
-        <div class="mb-1 clearfix">
-            <div class="pull-right">
-                Score 1 {{gradient-legend colors=gridDirector.currentColorPalette}} Score 6 (most favorable)
+        <div class="row mb-1">
+            <div class="col-xs-6">
+                <div class="checkbox m-0">
+                    <label>
+                        {{input type="checkbox" checked=gridDirector.showScores disabled=gridDirector.scoresDisabled}}
+                        <span class="faux-h4">Recommended EV Charging Station Score</span>
+                        {{tool-tip class='fa fa-info-circle' side='right' title='Click on each grid square to view unique attributes and the cluster score. A score of ‘6’ indicates the most favorable cluster score for EV charging station deployment, while a score of ‘1’ is the least favorable.'}}
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-xs-6">
+                <div class="pull-right">
+                    Score 1 {{gradient-legend colors=gridDirector.currentColorPalette}} Score 6 (most favorable)
+                </div>
             </div>
         </div>
 

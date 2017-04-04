@@ -109,15 +109,3 @@
         </label>
     </div>
 </div>
-
-{{#unless gridDirector.scoresDisabled}}
-    <div>
-        <h4>Recommended EV Charging Station Location Clusters{{tool-tip class='fa fa-info-circle' side='right' title='Click on each grid square to view unique attributes and the cluster score. A score of ‘6’ indicates the most favorable cluster score for EV charging station deployment, while a score of ‘1’ is the least favorable.'}}</h4>
-
-        <div class="checkbox">
-            <label>
-                {{input type="checkbox" checked=gridDirector.showScores disabled=gridDirector.scoresDisabled}} Show grid score clusters
-            </label>
-        </div>
-    </div>
-{{/unless}}
